@@ -1,1 +1,8 @@
 https://dimitrishelmis-spec.github.io/dimitrishelmis/
+# Check out solution URL
+$ cat solution.txt
+dimitrishelmis.github.io
+# Ensure the URL exists
+$ curl--output /dev/null--silent--head--fail dimitrishelmis.github.io \
+&& echo "URL exists" || echo "URL does not exist"
+URL exists
